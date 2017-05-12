@@ -1,0 +1,73 @@
+{>"layouts/manage" /}
+
+{<body}
+	<div class="row">
+		<div class="large-12 columns">
+			<h2>Add Employee</h2>
+			<form method="post" action="/manage/employees">
+				<div class="row">
+					<div class="large-12 columns">
+						<label>
+							ID
+							<input name="ID" type="text"/>
+						</label>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<label>
+							Name
+							<textarea name="name"></textarea>
+						</label>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<label>
+							Gender
+							<input name="gender" type="text"/>
+						</label>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<label>
+							Department
+							<input name="department" type="text"/>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>
+							Age
+							<input name="age" type="text" />
+						</label>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<label>
+							Designation
+							<input name="designation" type="text" />
+						</label>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<label>
+							Location
+							<input name="location" type="text" />
+						</label>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="large-12 columns">
+						<input type="submit" class="button" value="Submit"/>
+					</div>
+				</div>
+				<input type="hidden" name="_csrf" value="{_csrf}"/>
+			</form>
+		</div>
+	</div>
+{/body}

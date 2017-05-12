@@ -1,0 +1,22 @@
+{>"layouts/master" /}
+
+{<body}
+    <div class="large-4 columns apparel">
+        <img src="/img/{apparel.cover}" style="height:500px;width:400px">
+    </div>
+    <div class="large-8 columns apparel">
+        <h2>{apparel.title}</h2>
+        <ul class="apparelInfo">
+            <li>Category: {apparel.category}</li>
+            <li>Description: {apparel.description}</li>
+        </ul>
+        <br>
+        <div class="price"><span>${apparel.price}</span></div>
+        <br>
+        <p>
+            Channel your bohemian side in a cool bell-sleeve dress finished with a gracefully arched, artfully gathered peplum. Strategic vertical seaming sculpts a relaxed A-line dress with elbow-length sleeves.
+            Ever comfortable and chic, the classic shift gains a fresh feeling from crisp, colorful crepe.
+        </p>
+        <a class="button success">Add To Cart</a>
+    </div>
+{/body}

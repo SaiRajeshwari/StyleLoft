@@ -1,0 +1,37 @@
+{>"layouts/manage" /}
+
+{<body}
+	<h2>Apparels</h2>
+	<p><a href="/manage/apparels/add">Add Apparel</a></p>
+	<table>
+		<thead>
+			<tr>
+				<th width="200">ID</th>
+				<th width="200">Apparel Title</th>
+				<th width="200">Category</th>
+				<th width="180"></th>
+				<th width="180"></th>
+			</tr>
+		</thead>
+		<tbody>
+			{#apparels}
+				<tr>
+					<td>{._id}</td>
+					<td>{.title}</td>
+					<td>{.category}</td>
+					<td>
+						<a class="button" href="/manage/apparels/edit/{._id}">Edit</a>
+					</td>
+					<td>
+			      	 	<form method="post" action="/manage/apparels/delete/{._id}">
+			      			<input type="submit" value="Delete" class="button alert" />
+			      			<input type="hidden" name="_csrf" value="{_csrf}" />
+			      			<input type="hidden" name="_method" value="DELETE" />
+			      		</form>
+			      </td>
+				</tr>
+			{/apparels}
+		</tbody>
+	</table>
+{/body}
+

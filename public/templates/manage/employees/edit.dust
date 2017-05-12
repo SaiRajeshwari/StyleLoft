@@ -1,0 +1,65 @@
+{>"layouts/manage" /}
+{<body}
+	<div class="row">
+		<div class="large-12 columns">
+			<h2>Edit Employee</h2>
+			<form method="post" action="/manage/employees/edit/{employee._id}">
+				<div class="row">
+					<div class="large-12 columns">
+						<label>ID
+							<input type="text" name="ID" value="{employee.ID}"/>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Name
+							<input type="text" name="name" value="{employee.name}"/>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Gender
+							<input type="text" name="gender" value="{employee.gender}"/>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Department
+							<input type="text" name="department" value="{employee.department}"/>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Age
+							<input type="text" name="age" value="{employee.age}"/>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Designation
+							<input type="text" name="designation" value="{employee.designation}"/>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Location
+							<input type="text" name="location" value="{employee.location}"/>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<input type="submit" class="button" value="Submit">
+					</div>
+				</div>
+				<input type="hidden" name="_csrf" value="{_csrf}">
+			</form>
+		</div>
+	</div>
+{/body}

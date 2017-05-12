@@ -1,0 +1,18 @@
+{>"layouts/master" /}
+
+
+{<body}
+    {#apparels}
+    <div class="large-3 columns apparel">
+        <img src="/img/{.cover}" style="height:500px;width:400px">
+        <h4>{.title}</h4>
+        <p>{.description}</p>
+        <div class="price">Buy it for <span>${.price}</span></div>
+        <br>
+        <a href="/apparels/details/{.id}" class="button small">Apparel Details</a>
+        <div style="height:20px"></div>
+    </div>
+    {/apparels}
+    </div>
+{/body}
+

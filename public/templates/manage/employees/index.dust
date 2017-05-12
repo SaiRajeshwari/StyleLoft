@@ -1,0 +1,45 @@
+{>"layouts/manage" /}
+
+{<body}
+	<h2>Employees</h2>
+	<p><a href="/manage/employees/add">Add Employee</a></p>
+	<table>
+		<thead>
+			<tr>
+				<th width="150">ID</th>
+				<th width="200">Name</th>
+				<th width="100">Gender</th>
+				<th width="200">Department</th>
+				<th width="100">Age</th>
+				<th width="200">Designation</th>
+				<th width="200">Location</th>
+				<th width="180"></th>
+				<th width="180"></th>
+			</tr>
+		</thead>
+		<tbody>
+			{#employees}
+				<tr>
+					<td>{.ID}</td>
+					<td>{.name}</td>
+					<td>{.gender}</td>
+					<td>{.department}</td>
+					<td>{.age}</td>
+					<td>{.designation}</td>
+					<td>{.location}</td>
+					<td>
+						<a class="button" href="/manage/employees/edit/{._id}">Edit</a>
+					</td>
+					<td>
+			      	 	<form method="post" action="/manage/employees/delete/{._id}">
+			      			<input type="submit" value="Delete" class="button alert" />
+			      			<input type="hidden" name="_csrf" value="{_csrf}" />
+			      			<input type="hidden" name="_method" value="DELETE" />
+			      		</form>
+			      </td>
+				</tr>
+			{/employees}
+		</tbody>
+	</table>
+{/body}
+

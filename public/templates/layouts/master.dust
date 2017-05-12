@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{+title /}</title>
+    
+        <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="/css/foundation.css">
+        <link rel="stylesheet" href="/css/style.css">
+    
+    </head>
+    <body>
+        <script src="/oauth/lock.min.js"></script>
+        <script src="/oauth/app.js"></script>
+
+
+        <div class="row">
+            <div class="first-row" style="display:inline-block; margin-left:50px;">
+                <img src="/img/logo_one.png" style="height:70px;width:70px"> &nbsp; &nbsp;
+                <h1>StyleLoft</h1>
+                <a class="manage-link" href="/manage">Manage</a>
+            </div>
+            <div style="text-align:right; display:inline-block; float:right; margin-right:50px;">
+                <img alt="avatar" id="avatar" style="display:none;">
+                <p style="margin-bottom:0;">Welcome <span id="nickname"></span></p>
+                <button type="submit" class="button" id="btn-login">Sign In</button>
+                <button type="submit" class="button" id="btn-logout" style="display:none;">Sign Out</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="top-bar">
+                    <div class="top-bar-left">
+                        <ul class="menu">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <div id="wrapper">
+                    {messages|s}
+                    {+body /}
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="row">
+            <script type="text/javascript" async src="https://platform.twitter.com/widgets.js">
+            </script>
+                <div class="large-12 columns">
+                    <a class="twitter-share-button" href="https://twittercom/intent/tweet?text=Shop%20Online%20At%20StyleLoft">
+                    Tweet
+                    </a>
+                    <p>StyleLoft &copy; 2017</p>
+                </div>
+            </div>
+        </footer>
+
+
+    
+        <script data-main="/js/app" src="/components/requirejs/require.js"></script>
+    
+    </body>
+</html>

@@ -1,0 +1,23 @@
+{>"layouts/master" /}
+
+<style>
+	.first-row{
+		display: none;
+	}
+	.top-bar{
+		display: none;
+	}
+	.manage-link{
+		display: none;
+	}
+</style>
+
+{<body}
+    <div class="login-div">
+    	&nbsp;&nbsp;<img src="/img/logo_one.png" style="height:70px;width:70px"> &nbsp; &nbsp;
+        <h1>StyleLoft</h1>
+        <a href="/"><input class="button" value="Login To StyleLoft"/></a>
+    </div>
+
+{/body}
+

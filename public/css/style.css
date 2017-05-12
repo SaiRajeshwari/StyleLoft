@@ -1,0 +1,65 @@
+body{
+	background-image: url('/img/bkg.png');
+	background-repeat: repeat;
+}
+ul, li{
+	list-style: none;
+}
+
+.top-bar{
+	margin-bottom: 20px;
+}
+
+.apparel{
+	text-align: center;
+}
+
+.apparel h4{
+	margin-top: 15px;
+}
+
+.price{
+	margin: 5px;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.price span{
+	color: green;
+	background: #f4f4f4;
+	padding: 10px;
+	border: 1px #ccc solid;
+	border-radius: 50%;
+}
+
+footer{
+	margin-top: 40px;
+	padding: 10px;
+	text-align: center;
+}
+
+.first-row h1{
+	display: inline;	
+}
+
+.first-row h4{
+	display: inline;	
+	float: right;
+	padding-left: 15px;
+	margin-top: 20px;	
+}
+
+.manage-link{
+	color: #ffa500;
+	font-weight: 700;
+}
+
+.login-div{
+	margin: 0 auto;
+	padding: 10px;
+	padding-top: 100px;
+	text-align: center;
+}
+
+
+
